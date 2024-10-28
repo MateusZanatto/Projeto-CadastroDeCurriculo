@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Cadastrado</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <style>
+        body {
+            background-color: #f8f9fa; 
+        }
+        .alert {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            text-align: center;
+        }
+        .alert-icon {
+            margin-right: 10px; 
+        }
+        .button-center {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="alert alert-success" role="alert">
+        <i class="bi bi-check-circle alert-icon" style="font-size: 1.5rem; color: green;"></i>
+         <p style="color: green;">Currículo foi cadastrado com sucesso!</p>
+    </div>
+    <div class="button-center mt-3"> 
+        <a href="{% url 'cadastro' %}" class="btn btn-primary">Voltar para a página inicial</a>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
